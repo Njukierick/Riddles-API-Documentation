@@ -8,7 +8,7 @@ For this project, I've chosen to document the API with three different tools: [S
 
 - [API documentation using Swagger UI](https://riddleAPI.vercel.app/)
 
-  <a href="https://riddlesapi.vercel.app/api-docs"><img src="images/swagger.png?raw=true" alt="Swagger UI screenshot" width="400"/></a>
+  <a href="https://riddlesapidoc.vercel.app/api-docs"><img src="images/swagger.png?raw=true" alt="Swagger UI screenshot" width="400"/></a>
 
 - [API documentation using Stoplight](https://njukierick.stoplight.io/docs/riddles-api)
 
@@ -34,7 +34,7 @@ For this project, I've chosen to document the API with three different tools: [S
 
 Are you looking for a way to add riddles to your application? Rather than build the feature yourself, you can use this pre-built API. The Riddles API can return riddles from a variety of categories. Current categories include easy, hard, kids, math, word, and funny. Request one random riddle or request them all! Riddles in the original database are from [https://parade.com/947956/parade/riddles/](https://parade.com/947956/parade/riddles/). New riddles can be added and updated via the API.
 
-**Riddles API Server**: `https://riddlesapi.vercel.app`
+**Riddles API Server**: `https://riddlesapidoc.vercel.app`
 
 ## Authentication
 
@@ -78,7 +78,7 @@ The optional query parameter is defined as
 A curl request to get _all_ riddles:
 
 ```
-curl -X GET 'https://riddlesapi.vercel.app/riddles'
+curl -X GET 'https://riddlesapidoc.vercel.app/riddles'
 ```
 
 **Example response**
@@ -114,7 +114,7 @@ The same endpoint can be used with the `id` query parameter to get an individual
 A curl request to get an _individual_ riddle:
 
 ```
-curl -X GET 'https://riddlesapi.vercel.app/riddles?id=60bd0708d7dcc31bd9376abe'
+curl -X GET 'https://riddlesapidoc.vercel.app/riddles?id=60bd0708d7dcc31bd9376abe'
 ```
 
 **Example response**
@@ -176,7 +176,7 @@ The path parameter is defined as:
 A curl request to get all riddles from the _easy_ category:
 
 ```
-curl -X GET 'https://riddlesapi.vercel.app/riddles/easy'
+curl -X GET 'https://riddlesapidoc.vercel.app/riddles/easy'
 ```
 
 **Example response**
@@ -235,7 +235,7 @@ Make a `GET` request. A random Riddle object from the entire database is selecte
 A curl request to get a random riddle:
 
 ```
-curl -X GET 'https://riddlesapi.vercel.app/riddles/random'
+curl -X GET 'https://riddlesapidoc.vercel.app/riddles/random'
 ```
 
 A successful response will return an HTTP status code of `200`. The Riddle object returned uses this schema:
@@ -297,7 +297,7 @@ The path parameter is defined as:
 A curl request to get a random riddle from the _easy_ category:
 
 ```
-curl -X GET 'https://riddlesapi.vercel.app/riddles/easy/random'
+curl -X GET 'https://riddlesapidoc.vercel.app/riddles/easy/random'
 ```
 
 A successful response will return an HTTP status code of `200`. The Riddle object returned uses this schema:
@@ -367,7 +367,7 @@ A curl request to add a new riddle:
 
 ```
 curl -X POST \
-  'https://riddlesapi.vercel.app/riddles' \
+  'https://riddlesapidoc.vercel.app/riddles' \
   -H 'Content-Type: application/json' \
   -d '{
   "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",
@@ -448,7 +448,7 @@ The query parameter is defined as:
 A curl request to delete a riddle:
 
 ```
-curl -X DELETE 'https://riddlesapi.vercel.app/riddles?id=60bc3adb1e6946b94ca7a70a'
+curl -X DELETE 'https://riddlesapidoc.vercel.app/riddles?id=60bc3adb1e6946b94ca7a70a'
 ```
 
 A successful response will return an HTTP status code of `200` and have the following schema:
@@ -517,7 +517,7 @@ A curl request to update (overwrite) a riddle:
 
 ```
 curl -X PUT \
-  'http://riddlesapi.vercel.app/riddles?id=60bd0708d7dcc31bd9376abe' \
+  'http://riddlesapidoc.vercel.app/riddles?id=60bd0708d7dcc31bd9376abe' \
   -H 'Content-Type: application/json' \
   -d '{
   "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",
@@ -610,7 +610,7 @@ A curl request to update a field of a riddle:
 
 ```
 curl -X PATCH \
-  'http://riddlesapi.vercel.app/riddles?id=60bd0708d7dcc31bd9376abe' \
+  'http://riddlesapidoc.vercel.app/riddles?id=60bd0708d7dcc31bd9376abe' \
   -H 'Content-Type: application/json' \
   -d '{
   "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",
