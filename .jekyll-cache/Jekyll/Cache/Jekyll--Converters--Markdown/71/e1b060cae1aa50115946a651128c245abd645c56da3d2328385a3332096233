@@ -1,7 +1,0 @@
-I"•
-<div title="Error" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"`Not Found`: This error will occur if the requested riddle `id` is not found in the database. It could also occur if the database is empty"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-:ET

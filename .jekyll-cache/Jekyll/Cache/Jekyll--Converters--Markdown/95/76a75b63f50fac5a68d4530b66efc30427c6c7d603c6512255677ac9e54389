@@ -1,0 +1,211 @@
+I"<p>📌 To update an existing riddle by overwriting</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Method</th>
+      <th>Endpoint</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PUT</code></td>
+      <td>/riddles</td>
+      <td>Updates (by overwriting) a riddle in the database</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Select a Riddle object to update by setting the query parameter to its <code class="language-plaintext highlighter-rouge">id</code>. Use the JSON request body to set new values. Fields set in the request body will overwrite all existing values. Omitting a non-required field from the request body sets that field to null. Currently, updating seed data (the initial riddles added to the database) is not allowed.</p>
+
+<p>The query parameter is defined as:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Required</td>
+      <td>The database <code class="language-plaintext highlighter-rouge">id</code> for the riddle. This is needed for <code class="language-plaintext highlighter-rouge">PUT</code>, <code class="language-plaintext highlighter-rouge">PATCH</code>, or <code class="language-plaintext highlighter-rouge">DELETE</code> requests which are operations performed on an existing riddle.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The request body should use the following schema:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>riddle</td>
+      <td>string</td>
+      <td>Required</td>
+      <td>The riddle’s question</td>
+    </tr>
+    <tr>
+      <td>answer</td>
+      <td>string</td>
+      <td>Required</td>
+      <td>The riddle’s answer</td>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>string</td>
+      <td>Required</td>
+      <td>A one-word classification of the riddle. It should not contain spaces. The original database includes the categories: easy, hard, funny, kids, math, and word. This is not an enum and more can be added.</td>
+    </tr>
+    <tr>
+      <td>source</td>
+      <td>string</td>
+      <td>Optional</td>
+      <td>The source of the riddle</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="error"><strong>Note</strong>: The <code class="language-plaintext highlighter-rouge">Content-Type</code> header should be set to <code class="language-plaintext highlighter-rouge">application/json</code>.</p>
+
+<p class="success"><strong>Example request</strong></p>
+
+<p>A curl request to update (overwrite) a riddle:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X PUT \
+  'http://riddlesapi.netlify.app/riddles?id=60bd0708d7dcc31bd9376abe' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",
+  "answer": "The word '\''wrong.'\'' It'\''s the only word that'\''s spelled W-R-O-N-G.",
+  "category": "kids",
+  "source": "https://www.prodigygame.com/main-en/blog/riddles-for-kids/"
+  }'
+</code></pre></div></div>
+
+<p>A successful response will return an HTTP status code of <code class="language-plaintext highlighter-rouge">200</code> and have the following schema:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>message</td>
+      <td>string</td>
+      <td>A brief success message</td>
+    </tr>
+    <tr>
+      <td>content</td>
+      <td>object</td>
+      <td>Top-level containing Riddle object</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Where the Riddle object has this schema:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_id</td>
+      <td>string</td>
+      <td>The database id for the Riddle object</td>
+    </tr>
+    <tr>
+      <td>riddle</td>
+      <td>string</td>
+      <td>The riddle’s question</td>
+    </tr>
+    <tr>
+      <td>answer</td>
+      <td>string</td>
+      <td>The riddle’s answer</td>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>string</td>
+      <td>A classification of the riddle. The original database includes the categories: easy, hard, funny, kids, math, and word. This is not an enum and more can be added.</td>
+    </tr>
+    <tr>
+      <td>source</td>
+      <td>string</td>
+      <td>The source of the riddle</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="success"><strong>Example response</strong></p>
+
+<p>A successful response to a <code class="language-plaintext highlighter-rouge">PUT</code> request is an object like below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  HTTP/1.1 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+  "message": "Successfully updated riddle",
+  "content": {
+      "_id": "60bd0708d7dcc31bd9376abe",
+      "riddle": "I'm tall when I'm young, and I'm short when I'm old. What am I?",
+      "answer": "A candle",
+      "category": "easy",
+      "source": "https://parade.com/947956/parade/riddles/",
+  }
+  }
+</code></pre></div></div>
+
+<p class="error"><strong>Possible error responses</strong></p>
+
+<p>A <code class="language-plaintext highlighter-rouge">PUT</code> request to the /riddles endpoint may return the following errors:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Error code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>400</td>
+      <td><code class="language-plaintext highlighter-rouge">Bad Request</code>: This error will be returned if a required field in the request body is missing or if the <code class="language-plaintext highlighter-rouge">category</code> field contains a space.</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td><code class="language-plaintext highlighter-rouge">Forbidden</code>: This error will be returned if you try to modify the seed data (the initial riddles added to the database).</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td><code class="language-plaintext highlighter-rouge">Not Found</code>: This error will occur if the requested riddle <code class="language-plaintext highlighter-rouge">id</code> is not found in the database.</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td><code class="language-plaintext highlighter-rouge">Internal Server Error</code>: An unexpected error occurred on the server.</td>
+    </tr>
+  </tbody>
+</table>
+:ET
