@@ -12,15 +12,15 @@ For this project, I've chosen to document the API with three different tools: [S
 
 - [API documentation using Swagger UI](https://riddleAPI.netlify.app/api-docs)
 
-  <a href="https://riddleapi.netlify.app/api-docs"><img src="assets/images/swagger.png?raw=true" alt="Swagger UI screenshot" width="400"/></a>
+  <a href="https://riddleapi.netlify.app/api-docs"><img src="images/swagger.png?raw=true" alt="Swagger UI screenshot" width="400"/></a>
 
 - [API documentation using Stoplight](https://njukierick.stoplight.io/docs/riddles-api)
 
-  <a href="https://njukierick.stoplight.io/docs/riddles-api"><img src="assets/images/stoplight.png?raw=true" alt="Stoplight.io screenshot" width="400"/></a>
+  <a href="https://njukierick.stoplight.io/docs/riddles-api"><img src="images/stoplight.png?raw=true" alt="Stoplight.io screenshot" width="400"/></a>
 
 - [API documentation using Markdown](#riddles-api-documentation)
 
-  <a href="#riddles-api-documentation"><img src="assets/images/markdown.png?raw=true" alt="Markdown screenshot" width="400"/></a>
+  <a href="#riddles-api-documentation"><img src="images/markdown.png?raw=true" alt="Markdown screenshot" width="400"/></a>
 
 # Riddles API Documentation
 
