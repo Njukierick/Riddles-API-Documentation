@@ -1,0 +1,12 @@
+I"1
+<div title="curl" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> PATCH <span class="se">\</span>
+  <span class="s1">'http://guarded-eyrie-88809.herokuapp.com/riddles?id=60bd0708d7dcc31bd9376abe'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s1">'{
+  "riddle": "There'</span><span class="se">\'</span><span class="s1">'s only one word in the dictionary that'</span><span class="se">\'</span><span class="s1">'s spelled wrong. What is it?",
+  "answer": "The word '</span><span class="se">\'</span><span class="s1">'wrong.'</span><span class="se">\'</span><span class="s1">' It'</span><span class="se">\'</span><span class="s1">'s the only word that'</span><span class="se">\'</span><span class="s1">'s spelled W-R-O-N-G.",
+  "category": "kids",
+  "source": "https://www.prodigygame.com/main-en/blog/riddles-for-kids/"
+  }'</span>
+</code></pre></div></div>
+:ET

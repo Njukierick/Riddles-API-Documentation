@@ -1,0 +1,9 @@
+I"X
+<div title="Response" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Book Stealer"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"dateAdded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5/1/2015"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+:ET

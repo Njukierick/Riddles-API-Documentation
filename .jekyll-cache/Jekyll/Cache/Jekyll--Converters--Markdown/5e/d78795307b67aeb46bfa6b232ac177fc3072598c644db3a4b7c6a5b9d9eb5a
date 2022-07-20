@@ -1,0 +1,77 @@
+I"�<p>📌 To add a new riddle to the database</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Method</th>
+      <th>Endpoint</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td>/riddles</td>
+      <td>Adds a new riddle to the database</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Use the JSON request body to add a new Riddle object to the database.</p>
+
+<p>The request body should use the following schema:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>riddle</td>
+      <td>string</td>
+      <td>Required</td>
+      <td>The riddle’s question</td>
+    </tr>
+    <tr>
+      <td>answer</td>
+      <td>string</td>
+      <td>Required</td>
+      <td>The riddle’s answer</td>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>string</td>
+      <td>Required</td>
+      <td>A one-word classification of the riddle. It should not contain spaces. The original database includes the categories: easy, hard, funny, kids, math, and word. This is not an enum and more can be added.</td>
+    </tr>
+    <tr>
+      <td>source</td>
+      <td>string</td>
+      <td>Optional</td>
+      <td>The source of the riddle</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="error"><strong>Note</strong>: The <code class="language-plaintext highlighter-rouge">Content-Type</code> header should be set to <code class="language-plaintext highlighter-rouge">application/json</code>.</p>
+
+<p class="success"><strong>Example request</strong></p>
+
+<p>A curl request to add a new riddle:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X POST \
+  'https://guarded-eyrie-88809.herokuapp.com/riddles' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",
+  "answer": "The word '\''wrong.'\'' It'\''s the only word that'\''s spelled W-R-O-N-G.",
+  "category": "kids",
+  "source": "https://www.prodigygame.com/main-en/blog/riddles-for-kids/"
+  }'
+</code></pre></div></div>
+:ET

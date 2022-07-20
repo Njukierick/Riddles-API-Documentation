@@ -1,0 +1,68 @@
+I"m<p>📌 To get all riddles from a specific category</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Method</th>
+      <th>Endpoint</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td>/riddles/{category}</td>
+      <td>Returns all riddles from a specific category</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pass the desired category as a path parameter in the request. An array of Riddle objects matching the specific category is returned.</p>
+
+<p>The path parameter is defined as:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>category</td>
+      <td>string</td>
+      <td>Required</td>
+      <td>A riddle category. The seed data (the initial riddles added to the database) include the following categories: easy, hard, funny, kids, math, and word.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="info">Use the optional <code class="language-plaintext highlighter-rouge">id</code> query parameter to have the corresponding Riddle object returned. Omit the query parameter to have an array of all the Riddle objects in the database returned.</p>
+
+<p class="success"><strong>Example request</strong></p>
+
+<p>A curl request to get all riddles from the <em>easy</em> category:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X GET 'https://guarded-eyrie-88809.herokuapp.com/riddles/easy'
+</code></pre></div></div>
+
+<p><strong>Example response</strong></p>
+
+<p>A successful response is an array of Riddle objects:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  HTTP/1.1 200 OK
+  Content-Type: application/json; charset=utf-8
+  [
+  {
+      "_id": "60bd0708d7dcc31bd9376abe",
+      "riddle": "I'm tall when I'm young, and I'm short when I'm old. What am I?",
+      "answer": "A candle",
+      "category": "easy",
+      "source": "https://parade.com/947956/parade/riddles/"
+  }
+  ]
+</code></pre></div></div>
+:ET

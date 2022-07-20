@@ -1,0 +1,89 @@
+I"�
+<p>📌 To select a random riddle from the entire database:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Method</th>
+      <th>Endpoint</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td>/riddles/random</td>
+      <td>Returns a random riddle</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Make a <code class="language-plaintext highlighter-rouge">GET</code> request. A random Riddle object from the entire database is selected and returned.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  The path parameter is defined as:
+
+  | Parameter | Type   | Required | Description                                                                                                                                             |
+</code></pre></div></div>
+
+<p class="success"><strong>Example request</strong></p>
+
+<p>A curl request to get a random riddle:</p>
+
+<div class="language-plaintext success highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X GET 'https://guarded-eyrie-88809.herokuapp.com/riddles/random'
+</code></pre></div></div>
+<p><strong>Example response</strong>
+  A successful response will return an HTTP status code of <code class="language-plaintext highlighter-rouge">200</code>. The Riddle object returned uses this schema:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_id</td>
+      <td>string</td>
+      <td>The database id for the Riddle object</td>
+    </tr>
+    <tr>
+      <td>riddle</td>
+      <td>string</td>
+      <td>The riddle’s question</td>
+    </tr>
+    <tr>
+      <td>answer</td>
+      <td>string</td>
+      <td>The riddle’s answer</td>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>string</td>
+      <td>A classification of the riddle. The original database includes the categories: easy, hard, funny, kids, math, and word. This is not an enum and more can be added.</td>
+    </tr>
+    <tr>
+      <td>source</td>
+      <td>string</td>
+      <td>The source of the riddle</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="success"><strong>Example response</strong></p>
+
+<p>A successful response is an individual Riddle object:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  HTTP/1.1 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+  "_id": "60bd0708d7dcc31bd9376abe",
+  "riddle": "I'm tall when I'm young, and I'm short when I'm old. What am I?",
+  "answer": "A candle",
+  "category": "easy",
+  "source": "https://parade.com/947956/parade/riddles/"
+  }
+</code></pre></div></div>
+:ET

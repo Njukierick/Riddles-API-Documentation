@@ -1,0 +1,11 @@
+I"¬
+<div title="Error" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bad Request"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Internal Server Error"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+:ET

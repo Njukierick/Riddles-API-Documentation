@@ -1,0 +1,5 @@
+I"P
+<div title="Python" class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">"http://api.myapp.com/books/"</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="s">"YOUR_APP_KEY"</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">r</span><span class="p">.</span><span class="n">text</span>
+</code></pre></div></div>
+:ET

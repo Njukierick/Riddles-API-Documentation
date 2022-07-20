@@ -1,0 +1,34 @@
+I"[<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>200</td>
+      <td>OK</td>
+      <td>Success</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>Created</td>
+      <td>Creation Successful</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>Bad Request</td>
+      <td>We could not process that action</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td>Forbidden</td>
+      <td>We couldn’t authenticate you</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All errors will return JSON in the following format:</p>
+:ET

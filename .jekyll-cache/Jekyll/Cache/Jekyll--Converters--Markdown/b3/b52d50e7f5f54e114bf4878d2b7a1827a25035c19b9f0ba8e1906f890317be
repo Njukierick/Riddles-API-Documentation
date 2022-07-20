@@ -1,0 +1,7 @@
+I"!
+<div title="Response" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error message here"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+:ET

@@ -1,0 +1,30 @@
+I"S<p>📌 To get all riddles or an individual riddle
+| HTTP Method | Endpoint | Summary                |
+| ———– | ——– | ———————- |
+| <code class="language-plaintext highlighter-rouge">GET</code>       | /riddles | Returns Riddle objects |</p>
+
+<p>Use the optional <code class="language-plaintext highlighter-rouge">id</code> query parameter to have the corresponding Riddle object returned. Omit the query parameter to have an array of all the Riddle objects in the database returned.</p>
+
+<p>The optional query parameter is defined as</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Optional</td>
+      <td>If the database id for a riddle is known, use this parameter to get that specific Riddle object. <strong>Omit for all riddles to be returned.</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="info">Lists all the photos you have access to. You can paginate by using the parameters listed above.</p>
+:ET

@@ -1,0 +1,37 @@
+I"ê<p>Are you looking for a way to add riddles to your application? Rather than build the feature yourself, you can use this pre-built API. The Riddles API can return riddles from a variety of categories. Current categories include easy, hard, kids, math, word, and funny. Request one random riddle or request them all! Riddles in the original database are from <a href="https://parade.com/947956/parade/riddles/">https://parade.com/947956/parade/riddles/</a>. New riddles can be added and updated via the API.</p>
+
+<p class="success">Authentication</p>
+
+<p>No authentication is needed to use this API.</p>
+
+<p class="info">Usage</p>
+
+<p>The APIâ€™s endpoints and usage are described in the following sections:</p>
+
+<ul>
+  <li><a href="#getting-riddles-in-bulk-or-by-id">Get riddles in bulk or by id</a>:
+    <ul>
+      <li><a href="#-to-get-all-riddles-or-an-individual-riddle">Get all riddles or an individual riddle</a></li>
+      <li><a href="#-to-get-all-riddles-from-a-specific-category">Get all riddles from a specific category</a></li>
+    </ul>
+  </li>
+  <li><a href="#getting-one-random-riddle">Get one random riddle</a>:
+    <ul>
+      <li><a href="#-to-select-a-random-riddle-from-the-entire-database">Select a random riddle from the database</a></li>
+      <li><a href="#-to-select-a-random-riddle-from-a-specific-category">Select a random riddle from a specific category</a></li>
+    </ul>
+  </li>
+  <li><a href="#creating-or-deleting-a-riddle">Create or delete a riddle</a>:
+    <ul>
+      <li><a href="#-to-add-a-new-riddle-to-the-database">Add a riddle to the database</a></li>
+      <li><a href="#-to-delete-a-riddle-from-the-database">Delete a riddle from the database</a></li>
+    </ul>
+  </li>
+  <li><a href="#modifying-a-riddle">Modify a riddle</a>:
+    <ul>
+      <li><a href="#-to-update-an-existing-riddle-by-overwriting">Update an existing riddle by overwriting</a></li>
+      <li><a href="#-to-update-a-field-of-an-existing-riddle">Update a field of an existing riddle</a></li>
+    </ul>
+  </li>
+</ul>
+:ET
