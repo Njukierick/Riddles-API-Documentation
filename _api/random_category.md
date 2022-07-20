@@ -24,7 +24,7 @@ content_markdown: |-
   A curl request to get a random riddle from the _easy_ category:
 
     ```
-    curl -X GET 'https://riddlesapi.netlify.app/riddles/easy/random'
+    curl -X GET 'https://riddlesapidoc.vercel.app/riddles/easy/random'
     ```
 
     A successful response will return an HTTP status code of `200`. The Riddle object returned uses this schema:
@@ -67,7 +67,7 @@ content_markdown: |-
 
 right_code_blocks:
   - code_block: |-
-      curl -X GET 'https://riddlesapi.netlify.app/riddles/random'
+      curl -X GET 'https://riddlesapidoc.vercel.app/riddles/random'
     title: curl
     language: bash
   - code_block: |2-

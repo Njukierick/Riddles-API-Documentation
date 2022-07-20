@@ -1,4 +1,4 @@
-I"Í<p>ðŸ“Œ To get all riddles from a specific category</p>
+I"Ï<p>ðŸ“Œ To get all riddles from a specific category</p>
 
 <table>
   <thead>
@@ -44,7 +44,7 @@
 
 <p>A curl request to get all riddles from the <em>easy</em> category:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X GET 'https://riddlesapi.netlify.app/riddles/easy'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X GET 'https://riddlesapidoc.vercel.app/riddles/easy'
 </code></pre></div></div>
 
 <p><strong>Example response</strong></p>

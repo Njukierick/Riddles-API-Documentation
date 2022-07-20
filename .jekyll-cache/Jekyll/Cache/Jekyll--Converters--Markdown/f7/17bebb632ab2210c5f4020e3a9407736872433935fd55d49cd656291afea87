@@ -1,0 +1,4 @@
+I"ð
+<div title="curl" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> GET <span class="s1">'https://riddlesapidoc.vercel.app/riddles'</span>
+</code></pre></div></div>
+:ET

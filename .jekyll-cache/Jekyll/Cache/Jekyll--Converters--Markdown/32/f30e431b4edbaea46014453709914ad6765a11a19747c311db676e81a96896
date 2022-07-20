@@ -1,4 +1,4 @@
-I"º<p>ðŸ“Œ To get all riddles or an individual riddle</p>
+I"¼<p>ðŸ“Œ To get all riddles or an individual riddle</p>
 
 <table>
   <thead>
@@ -45,7 +45,7 @@
 <p class="success"><strong>Example request</strong></p>
 
 <p>A curl request to get <em>all</em> riddles:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET 'https://riddlesapi.netlify.app/riddles'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET 'https://riddlesapidoc.vercel.app/riddles'
 </code></pre></div></div>
 
 <p class="success"><strong>Example request</strong></p>

@@ -3,11 +3,7 @@ title: /riddles
 position_number: 1.0
 type: get
 description: To get all riddles or an individual riddle
-parameters:
-  - name: offset
-    content: Offset the results by this amount
-  - name: limit
-    content: Limit the number of books returned
+
 content_markdown: |-
   📌 To get all riddles or an individual riddle
 
@@ -34,7 +30,7 @@ content_markdown: |-
 
   A curl request to get _all_ riddles:
   ```
-  curl -X GET 'https://riddlesapi.netlify.app/riddles'
+  curl -X GET 'https://riddlesapidoc.vercel.app/riddles'
   ```
 
   {: .success }
@@ -101,12 +97,12 @@ left_code_blocks:
     title: Node.js
     language: javascript
   - code_block: |-
-      curl -X GET 'https://riddlesapi.netlify.app/riddles'
+      curl -X GET 'https://riddlesapidoc.vercel.app/riddles'
     title: curl
     language: bash
 right_code_blocks:
   - code_block: |-
-      curl -X GET 'https://riddlesapi.netlify.app/riddles'
+      curl -X GET 'https://riddlesapidoc.vercel.app/riddles'
     title: curl
     language: bash
   - code_block: |2-

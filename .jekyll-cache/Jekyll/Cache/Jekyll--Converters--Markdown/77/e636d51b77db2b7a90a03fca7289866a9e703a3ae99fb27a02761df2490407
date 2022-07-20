@@ -1,4 +1,4 @@
-I"u<p>📌 To select a random riddle from a specific category:</p>
+I"w<p>📌 To select a random riddle from a specific category:</p>
 
 <table>
   <thead>
@@ -43,7 +43,7 @@
 <p class="success"><strong>Example request</strong>
 A curl request to get a random riddle from the <em>easy</em> category:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X GET 'https://riddlesapi.netlify.app/riddles/easy/random'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X GET 'https://riddlesapidoc.vercel.app/riddles/easy/random'
 </code></pre></div></div>
 
 <p>A successful response will return an HTTP status code of <code class="language-plaintext highlighter-rouge">200</code>. The Riddle object returned uses this schema:</p>

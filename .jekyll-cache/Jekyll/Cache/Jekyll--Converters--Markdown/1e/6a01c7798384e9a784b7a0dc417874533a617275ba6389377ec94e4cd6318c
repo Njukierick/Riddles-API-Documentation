@@ -1,4 +1,4 @@
-I"ì<p>ðŸ“Œ To add a new riddle to the database</p>
+I"î<p>ðŸ“Œ To add a new riddle to the database</p>
 
 <table>
   <thead>
@@ -65,7 +65,7 @@
 <p>A curl request to add a new riddle:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X POST \
-  'https://riddlesapi.netlify.app/riddles' \
+  'https://riddlesapidoc.vercel.app/riddles' \
   -H 'Content-Type: application/json' \
   -d '{
   "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",

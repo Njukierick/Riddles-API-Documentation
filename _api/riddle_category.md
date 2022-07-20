@@ -26,7 +26,7 @@ content_markdown: |-
     A curl request to get all riddles from the _easy_ category:
 
     ```
-    curl -X GET 'https://riddlesapi.netlify.app/riddles/easy'
+    curl -X GET 'https://riddlesapidoc.vercel.app/riddles/easy'
     ```
 
     **Example response**
@@ -67,7 +67,7 @@ content_markdown: |-
 
 right_code_blocks:
   - code_block: |-
-      curl -X GET 'https://riddlesapi.netlify.app/riddles/easy'
+      curl -X GET 'https://riddlesapidoc.vercel.app/riddles/easy'
     title: curl
     language: bash
   - code_block: |2-

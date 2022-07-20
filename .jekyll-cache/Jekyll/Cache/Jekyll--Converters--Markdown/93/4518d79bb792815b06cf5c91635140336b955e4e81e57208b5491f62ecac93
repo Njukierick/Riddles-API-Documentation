@@ -1,4 +1,4 @@
-I"<p>ğŸ“Œ To select a random riddle from the entire database:</p>
+I"<p>ğŸ“Œ To select a random riddle from the entire database:</p>
 
 <table>
   <thead>
@@ -28,7 +28,7 @@
 
 <p>A curl request to get a random riddle:</p>
 
-<div class="language-plaintext success highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X GET 'https://riddlesapi.netlify.app/riddles/random'
+<div class="language-plaintext success highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X GET 'https://riddlesapidoc.vercel.app/riddles/random'
 </code></pre></div></div>
 <p><strong>Example response</strong>
   A successful response will return an HTTP status code of <code class="language-plaintext highlighter-rouge">200</code>. The Riddle object returned uses this schema:</p>

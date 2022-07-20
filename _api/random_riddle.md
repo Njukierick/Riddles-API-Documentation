@@ -23,7 +23,7 @@ content_markdown: |-
     A curl request to get a random riddle:
 
     ```
-    curl -X GET 'https://riddlesapi.netlify.app/riddles/random'
+    curl -X GET 'https://riddlesapidoc.vercel.app/riddles/random'
     ```
     {: .success }
   **Example response**
@@ -67,7 +67,7 @@ content_markdown: |-
 
 right_code_blocks:
   - code_block: |-
-      curl -X GET 'https://riddlesapi.netlify.app/riddles/random'
+      curl -X GET 'https://riddlesapidoc.vercel.app/riddles/random'
     title: curl
     language: bash
   - code_block: |2-

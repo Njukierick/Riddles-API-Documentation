@@ -1,4 +1,4 @@
-I"<p>📌 To update an existing riddle by overwriting</p>
+I"<p>📌 To update an existing riddle by overwriting</p>
 
 <table>
   <thead>
@@ -86,7 +86,7 @@
 <p>A curl request to update (overwrite) a riddle:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X PUT \
-  'http://riddlesapi.netlify.app/riddles?id=60bd0708d7dcc31bd9376abe' \
+  'http://riddlesapidoc.vercel.app/riddles?id=60bd0708d7dcc31bd9376abe' \
   -H 'Content-Type: application/json' \
   -d '{
   "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",

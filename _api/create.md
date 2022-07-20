@@ -32,7 +32,7 @@ content_markdown: |-
 
     ```
     curl -X POST \
-    'https://riddlesapi.netlify.app/riddles' \
+    'https://riddlesapidoc.vercel.app/riddles' \
     -H 'Content-Type: application/json' \
     -d '{
     "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",
@@ -97,7 +97,7 @@ content_markdown: |-
 right_code_blocks:
   - code_block: |-
       curl -X POST \
-        'https://riddlesapi.netlify.app/riddles' \
+        'https://riddlesapidoc.vercel.app/riddles' \
         -H 'Content-Type: application/json' \
         -d '{
         "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",

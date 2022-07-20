@@ -1,4 +1,4 @@
-I",<p>📌 To delete a riddle from the database</p>
+I".<p>📌 To delete a riddle from the database</p>
 
 <table>
   <thead>
@@ -44,7 +44,7 @@
 
 <p>A curl request to delete a riddle:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X DELETE 'https://riddlesapi.netlify.app/riddles?id=60bc3adb1e6946b94ca7a70a'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -X DELETE 'https://riddlesapidoc.vercel.app/riddles?id=60bc3adb1e6946b94ca7a70a'
 </code></pre></div></div>
 
 <p>A successful response will return an HTTP status code of <code class="language-plaintext highlighter-rouge">200</code> and have the following schema:</p>

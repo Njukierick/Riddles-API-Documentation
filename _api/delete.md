@@ -25,7 +25,7 @@ content_markdown: |-
     A curl request to delete a riddle:
 
     ```
-    curl -X DELETE 'https://riddlesapi.netlify.app/riddles?id=60bc3adb1e6946b94ca7a70a'
+    curl -X DELETE 'https://riddlesapidoc.vercel.app/riddles?id=60bc3adb1e6946b94ca7a70a'
     ```
 
     A successful response will return an HTTP status code of `200` and have the following schema:
@@ -63,7 +63,7 @@ content_markdown: |-
 right_code_blocks:
   - code_block: |-
       curl -X POST \
-        'https://riddlesapi.netlify.app/riddles' \
+        'https://riddlesapidoc.vercel.app/riddles' \
         -H 'Content-Type: application/json' \
         -d '{
         "riddle": "There'\''s only one word in the dictionary that'\''s spelled wrong. What is it?",
