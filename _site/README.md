@@ -78,7 +78,7 @@ The optional query parameter is defined as
 A curl request to get _all_ riddles:
 
 ```
-curl -X GET 'https://riddlesapi.vercel.app/riddles'
+curl -X GET 'https://riddlesapidoc.vercel.app/riddles'
 ```
 
 **Example response**
